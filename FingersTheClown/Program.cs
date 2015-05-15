@@ -10,6 +10,12 @@ namespace FingersTheClown
     {
         static void Main(string[] args)
         {
+            ScaryScary fingersTheClown = new ScaryScary("big shoes", 14);
+            FunnyFunny someFunnyClown = fingersTheClown;
+            IScaryClown someOtherScaryClown = someFunnyClown as IScaryClown;// ScaryScary;
+            someOtherScaryClown.Honk();
+            someOtherScaryClown.ScareLittleChildren();
+            Console.ReadKey();
         }
     }
 }
